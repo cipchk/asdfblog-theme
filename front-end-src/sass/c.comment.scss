@@ -1,0 +1,366 @@
+.comments,
+.comment-respond {
+    padding: 8%;
+}
+
+.post + .comments {
+    border-top: .2rem solid #EEE;
+}
+
+.comments-title,
+#reply-title,
+.pingbacks-title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #272F38;
+}
+
+li.comment,
+li > div.comment {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+li > div.comment {
+    padding-bottom: 2.5rem;
+    border-bottom: .1rem solid #EEE;
+}
+
+.commentlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .children {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 3rem;
+    }
+}
+
+.commentlist > li:first-child > div.comment:first-child {
+    border-top: .1rem solid #EEE;
+    padding-top: 2.5rem;
+}
+
+.children .children > li > div.comment {
+    padding-left: 10%;
+}
+
+.children .children .children > li > div.comment {
+    padding-left: 20%;
+}
+
+.children .children .children .children > li > div.comment {
+    padding-left: 30%;
+}
+
+.children .children .children .children .children > li > div.comment {
+    padding-left: 40%;
+}
+
+.comment .children li:last-child {
+    margin-bottom: 0;
+}
+
+.commentlist > li.comment:last-child,
+.commentlist > li.comment div.comment:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Pingback list --------------------------------------- */
+
+.comments .pingbacks {
+    margin-top: 5.5%;
+}
+
+.pingbacks-inner {
+    margin: 0 auto;
+}
+
+.pingbacks-title {
+    margin-bottom: 2rem;
+}
+
+.pingbacklist li {
+    padding: 0.5rem;
+    line-height: 130%;
+}
+
+.pingbacklist a:hover {
+    text-decoration: underline;
+}
+
+.pingbacklist li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.pingbacklist .comment-edit-link {
+    color: #999;
+}
+
+.pingbacklist .comment-edit-link:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+
+/* Comment meta --------------------------------------- */
+
+.comment-meta {
+    margin-bottom: 1rem;
+}
+
+.comment-meta .avatar {
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 99.9rem;
+    float: left;
+}
+
+.comment-actions {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.comment-actions a {
+    margin-left: .8rem;
+}
+
+.comment-actions a:first-child {
+    margin-left: 0;
+}
+
+.comment-meta-content {
+    margin-left: 2rem;
+    padding-top: .7rem;
+}
+
+.comment-meta-content cite {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: .5rem;
+    display: block;
+    font-weight: 700;
+}
+
+.bypostauthor .comment-meta-content cite .post-author {
+    font-weight: 400;
+    color: #999;
+    margin-left: .3rem;
+    letter-spacing: 0;
+}
+
+.comment-meta-content cite a {
+    color: #444;
+}
+
+.comment-meta-content cite a:hover {
+    color: #FF706C;
+}
+
+.comment-meta-content p {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.comment-meta-content p a {
+    color: #BBB;
+}
+
+.comment-meta-content p a:hover {
+    color: #FF706C;
+}
+
+.comment-awaiting-moderation {
+    position: absolute;
+    right: 0;
+    top: .4rem;
+    font-weight: bold;
+    display: block;
+    padding: 1rem 1.4rem;
+    background: #CCC;
+    border-radius: .3rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.comment-awaiting-moderation:hover {
+    background: #2d2d2d;
+}
+
+
+/* Comment nav below --------------------------------------- */
+
+.comment-nav-below {
+    padding-top: 5%;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.comment-nav-below a {
+    color: #666;
+}
+
+
+/* Comment content --------------------------------------- */
+
+.comment-content {
+    margin-left: 4rem;
+    font-size: 1.6rem;
+}
+
+.comment-content h1,
+.comment-content h2,
+.comment-content h3,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6 {
+    font-weight: 500;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+
+
+/* Respond --------------------------------------- */
+
+.comment-respond {
+    border-top: .4rem solid #EEE;
+}
+
+#reply-title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+#respond a:hover {
+    text-decoration: underline;
+}
+
+#respond .content-section-right {
+    -webkit-border-radius: 0 0 .4rem .4rem;
+    -moz-border-radius: 0 0 .4rem .4rem;
+    border-radius: 0 0 .4rem .4rem;
+    border-top: .1rem solid #EEE;
+    z-index: 12;
+}
+
+.nocomments {
+    padding: 8%;
+    color: #666;
+    text-align: center;
+}
+
+#cancel-comment-reply-link {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+#respond p,
+#respond code {
+    line-height: 150%;
+}
+
+.comment-form p {
+    margin-bottom: 2rem;
+}
+
+.comment-form p:last-child {
+    margin-bottom: 0;
+}
+
+p.comment-notes,
+p.logged-in-as {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+#respond form label,
+.comment-form .required {
+    display: none;
+}
+
+.comment-form input {
+    max-width: 75%;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input.password,
+.comment-form textarea {
+    border: none;
+    background: #FAFAFA;
+    border-radius: .3rem;
+    padding: 1.6rem;
+    margin: 0;
+    width: 100%;
+    border: .1rem solid #EEE;
+    -webkit-appearance: none;
+    font-size: 1.4rem;
+    color: #444;
+}
+
+.comment-form textarea {
+    line-height: 160%;
+    height: 25rem;
+}
+
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form input.password:focus,
+.comment-form textarea:focus {
+    outline: none;
+    background-color: #EEE;
+    color: #444;
+}
+
+.comment-form input {
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.comment-form input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    padding: 1.6rem;
+    margin-bottom: 0;
+    border: none;
+    background: #272F38;
+    color: #FFF;
+    line-height: 1;
+    border-radius: .4rem;
+}
+
+.comment-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #FF706C;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.comment-form input[type="submit"]:active {
+    top: .1rem;
+    position: relative;
+}
+
+p.form-allowed-tags {
+    margin-top: 1.5em;
+    line-height: 160%
+}
+
+.form-submit {
+    margin-top: 1.5em;
+}

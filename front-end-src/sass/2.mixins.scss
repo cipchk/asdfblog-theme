@@ -1,0 +1,36 @@
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin container-fixed($gutter: $container-gutter-width) {
+    margin: 0 auto;
+}
+
+@mixin transition($con) {
+    -webkit-transition: $con;
+    -moz-transition: $con;
+    -ms-transition: $con;
+    -o-transition: $con;
+    transition: $con;
+}
+
+@mixin transform($con) {
+    -webkit-transform: $con;
+    -moz-transform: $con;
+    -ms-transform: $con;
+    -o-transform: $con;
+    transform: $con;
+}
+
+@mixin box-sizing($boxmodel) {
+    -webkit-box-sizing: $boxmodel;
+    -moz-box-sizing: $boxmodel;
+    box-sizing: $boxmodel;
+}

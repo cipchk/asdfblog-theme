@@ -1,0 +1,42 @@
+.container {
+  @include container-fixed();
+  @include clearfix();
+
+  @media (min-width: $screen-sm) {
+    width: $container-tablet;
+
+  }
+  @media (min-width: $screen-md) {
+    width: $container-desktop;
+
+    .sidebar {
+      float: left;
+        display: block;
+    }
+    .content {
+      float: left;
+      width: 75%;
+    }
+  }
+  @media (min-width: $screen-lg) {
+    width: $container-large-desktop;
+  }
+}
+
+.sidebar, .content {
+  position: relative;
+}
+
+.sidebar {
+    margin-top: 6.6%;
+    width: 25%;
+    padding: 0 ($container-gutter-width / 2);
+    display: none;
+}
+
+.content {
+    background-color: #fff;
+    overflow: hidden;
+    min-height: 50rem;
+    z-index: 2;
+}

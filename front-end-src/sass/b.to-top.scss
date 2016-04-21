@@ -1,0 +1,48 @@
+.to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    background-color: $bg-color;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    border: .1rem solid #fff;
+    z-index: 3;
+
+    span {
+        display: none;
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        bottom: 1.3rem;
+        right: .7rem;
+        border-left: solid 1rem transparent;
+        border-right: solid 1rem transparent;
+        border-bottom: solid 1rem #fff;
+        background: transparent;
+        z-index: 1;
+    }
+
+    &::before {
+        border-bottom-color: $bg-color;
+        bottom: 1.2rem;
+        z-index: 2;
+    }
+
+    &:hover, &.hover {
+        background-color: transparent;
+        border-color: transparent;
+        &::before, &::after {
+            border-bottom: solid 1rem $bg-color;
+        }
+
+        &::before {
+            border-bottom-color: #fff;
+        }
+    }
+}

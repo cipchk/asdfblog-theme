@@ -1,0 +1,22 @@
+.header {
+    text-align: center;
+    color: #777;
+    margin-bottom: 1rem;
+    .logo {
+        img {
+            border-radius: 50%;
+            max-width: 6rem;
+            max-height: 6rem;
+            border: .2rem solid #fff;
+        }
+    }
+    .title {
+        margin: 1.5rem auto;
+        font-size: 1.8rem;
+        font-weight: normal;
+    }
+    .description {
+        margin: 0 auto 1.5rem auto;
+        font-size: 1.7rem;
+    }
+}

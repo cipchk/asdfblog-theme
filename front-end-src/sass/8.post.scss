@@ -1,0 +1,460 @@
+.posts {
+    min-height: 1400px;
+}
+
+.post,
+.post.page,
+.search .page {
+    position: relative;
+    background: #FFF;
+    border-top: .4rem solid #EEE;
+}
+
+.post {
+    &:first-child,
+    &.page-first-child {
+        border-top: none;
+    }
+    .post-inner {
+        padding: 4%;
+        @media (min-width: $screen-sm) {
+            padding: 8%;
+        }
+    }
+}
+
+
+/* Post header --------------------------------------- */
+
+.post-header {
+    margin-bottom: 4%;
+}
+
+.post-meta {
+    font-size: 1.2rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    &.light {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    a {
+        color: #999;
+        &:hover {
+            color: #FF706C;
+        }
+    }
+    .date-sep {
+        margin: 0 .5rem;
+        color: #DDD;
+    }
+}
+
+.post-title {
+    font-size: 4rem;
+    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #272F38;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    a {
+        color: #272F38;
+        &:hover {
+            color: $link-color;
+            text-decoration: none;
+        }
+    }
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+/*  9. Post content
+/* -------------------------------------------------------------------------------- */
+
+.post-content {
+    p,
+    blockquote,
+    ul,
+    ol,
+    address,
+    dl,
+    pre,
+    .wp-caption {
+        line-height: 170%;
+        margin-bottom: 1.1rem;
+    }
+    > *:first-child {
+        margin-top: 0;
+    }
+    *:last-child {
+        margin-bottom: 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 3rem 0 1.5rem;
+        color: #444;
+        line-height: 120%;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+    h3 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    h4 {
+        font-size: 1.6rem;
+    }
+    h5 {
+        font-size: 1.4rem;
+    }
+    h6 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    h1+h1,
+    h1+h2,
+    h1+h3,
+    h1+h4,
+    h1+h5,
+    h1+h6,
+    h2+h1,
+    h2+h2,
+    h2+h3,
+    h2+h4,
+    h2+h5,
+    h2+h6,
+    h3+h1,
+    h3+h2,
+    h3+h3,
+    h3+h4,
+    h3+h5,
+    h3+h6,
+    h4+h1,
+    h4+h2,
+    h4+h3,
+    h4+h4,
+    h4+h5,
+    h4+h6,
+    h5+h1,
+    h5+h2,
+    h5+h3,
+    h5+h4,
+    h5+h5,
+    h5+h6,
+    h6+h1,
+    h6+h2,
+    h6+h3,
+    h6+h4,
+    h6+h5,
+    h6+h6 {
+        margin-top: 2.5rem;
+    }
+    blockquote {
+        padding: 1rem;
+        font-size: 1.4rem;
+        line-height: 150%;
+        color: #666;
+        background: #EEE;
+        margin-right: 0;
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        cite {
+            display: block;
+            margin-top: 1rem;
+            em {
+                font-style: italic;
+                font-weight: bold;
+            }
+        }
+    }
+    cite {
+        font-weight: 700;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        line-height: 140%;
+        color: #666;
+        font-size: 0.9rem;
+        &:before {
+            content: "â€” ";
+        }
+    }
+    strong em，em strong {
+        font-weight: bold;
+        font-style: italic;
+    }
+    big {
+        font-size: 1.25rem;
+    }
+    .highlight {
+        background: #fcf8a5;
+        width: auto;
+        display: inline;
+        padding: .2rem .3rem;
+    }
+    dl {
+        line-height: 160%;
+        dt {
+            font-weight: bold;
+        }
+    }
+    hr {
+        width: 50%;
+        height: .4rem;
+        background: #EEE;
+        margin: 2rem auto;
+        border: 0;
+    }
+    ul {
+        list-style: disc;
+        margin-left: 1.5rem;
+        ul {
+            list-style: circle;
+            ul {
+                list-style: square;
+            }
+        }
+    }
+    ol {
+        list-style: decimal;
+        margin-left: 1.5rem;
+        ol {
+            list-style: lower-alpha;
+            ol {
+                list-style: lower-roman;
+            }
+        }
+    }
+    ul ul,
+    ul ol,
+    ol ul,
+    ol ol {
+        margin-bottom: 0;
+    }
+    ul ul li,
+    ul ol li,
+    ol ul li,
+    ol ol li {
+        margin-top: 0.5rem;
+    }
+    li {
+        margin-bottom: 0.5rem;
+        line-height: 170%;
+    }
+    ol > li:last-child,
+    ul > li:last-child {
+        margin-bottom: 0;
+    }
+    address {
+        padding: 3% 3.5%;
+        background: #F1F1F1;
+    }
+    pre {
+        white-space: pre-wrap;
+        /* css-3 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        word-wrap: break-word;
+        /* Internet Explorer 5.5+ */
+        line-height: 140%;
+        padding: 2% 2.5%;
+        background: #f1f1f1;
+    }
+    a {
+        &.more-link {
+            display: inline-block;
+            background: #272F38;
+            padding: 1.5rem 1.8rem 1.8rem;
+            color: #FFF;
+            font-size: 0.85rem;
+            line-height: 1;
+            border-radius: .4rem;
+            &:hover {
+                background: #FF706C;
+                color: #FFF;
+                text-decoration: none;
+            }
+        }
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .alignleft,
+    .alignright {
+        margin-bottom: 1.2rem;
+        max-width: 40%;
+    }
+}
+
+
+/* Post media --------------------------------------- */
+
+.wp-caption {
+    a,
+    img {
+        display: block;
+    }
+}
+
+.post-content .wp-caption .alignleft,
+.post-content .wp-caption .alignright {
+    margin-bottom: 0;
+}
+
+.post-content .alignleft {
+    float: left;
+    margin-right: 1.2rem;
+}
+
+.post-content .alignright {
+    float: right;
+    margin-left: 1.2rem;
+}
+
+.post-content .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-content .alignnone {
+    display: inline-block;
+}
+
+.post-content .wp-caption-text,
+.post-content .gallery-caption {
+    font-size: 0.85rem;
+    font-style: italic;
+    padding-top: 0.5rem;
+    color: #888;
+    text-align: center;
+}
+
+.post-content .gallery-caption {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 0 1rem 1.5rem;
+}
+
+.post-content .gallery {
+    margin-bottom: 1rem !important;
+}
+
+.post-content .gallery img {
+    border: none !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.post-content .gallery a {
+    display: block;
+    padding: 1rem;
+}
+
+.post-content .gallery .gallery-item {
+    margin: 0 !important;
+}
+
+
+/* Tables --------------------------------------- */
+
+.post-content table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 1.1rem;
+}
+
+.post-content th,
+.post-content td {
+    padding: 2%;
+    margin: 0;
+    overflow: visible;
+    line-height: 120%;
+    border-bottom: .1rem solid #DDD;
+}
+
+.post-content caption {
+    color: #444;
+    text-align: center;
+    padding: 2%;
+}
+
+.post-content thead {
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.post-content th {
+    font-weight: bold;
+    color: #444;
+}
+
+.post-content table tbody > tr:nth-child(odd) > td {
+    background: #f9f9f9;
+}
+
+.post-cat-tags {
+    margin: 0 8% 4% 8%;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #999;
+}
+
+.post-cat-tags a:hover {
+    text-decoration: underline;
+}
+
+.post-cat-tags p {
+    display: inline-block;
+    line-height: 130%;
+}
+
+.post-categories {
+    margin-right: 2rem;
+}
+
+.post-tags {
+    margin-top: 1rem;
+}
+
+
+/* post-nav */
+
+.archive-nav.post-nav {
+    background: #272F38;
+}
+
+.archive-nav.post-nav a {
+    background: #1B2027;
+}

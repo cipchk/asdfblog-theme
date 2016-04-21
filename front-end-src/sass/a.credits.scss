@@ -1,0 +1,17 @@
+.credits {
+    background: #FFF;
+    color: #777;
+    padding: 5% 8%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    a {
+        color: #777;
+    }
+    .credits-left {
+        float: left;
+    }
+    .credits-right {
+        float: right;
+    }
+}

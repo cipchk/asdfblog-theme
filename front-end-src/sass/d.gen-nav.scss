@@ -1,0 +1,20 @@
+.quick-nav-wrap {
+    display: none;
+}
+
+.quick-nav {
+    position: fixed;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    display: none;
+    margin: 0;
+    &.active {
+        display: block;
+    }
+    a {
+        color: #f50;
+        &.active {
+            color: #fff;
+        }
+    }
+}

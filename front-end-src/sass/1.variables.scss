@@ -1,0 +1,17 @@
+// 背景
+$bg-color: #353e49 !default;
+$base-font-size: 18px !default;
+// 链接颜色
+$link-color: #FF706C !default;
+// 字体
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// 容器规格
+$container-gutter-width: 30px !default;
+$container-tablet: (720px + $container-gutter-width) !default;
+$container-desktop: (940px + $container-gutter-width) !default;
+$container-large-desktop: (1140px + $container-gutter-width) !default;
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;

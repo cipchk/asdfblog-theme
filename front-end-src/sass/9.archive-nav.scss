@@ -1,0 +1,26 @@
+.archive-nav {
+    padding: 7% 8%;
+    background: #EEE;
+    font-size: 1.4rem;
+    a {
+        margin: 0;
+        padding: 1.8rem 2rem;
+        background: $bg-color;
+        float: left;
+        border-radius: .4rem;
+        color: #FFF;
+        &:hover {
+            background: #FF706C;
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+    .post-nav-older {
+        margin-right: 1rem;
+    }
+    .post-nav-newer {
+        float: right;
+        text-align: right;
+        margin-left: 1rem;
+    }
+}
